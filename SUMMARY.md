@@ -8,4 +8,3 @@
   + [教程该怎么写](draft/how2tutorial.md)
 - [有关](ABOUT.md)
 
-**输出！ 输出！ 输出！**
