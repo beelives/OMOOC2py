@@ -1,29 +1,19 @@
-__author__ = 'rbeelive'
+# _*_ coding:utf-8 _*_
+
 import  sys
-import time
-
-
-def Get_Time():
-    return time.strftime("%Y-%m-%d %H:%M:%S",time.localtime(time.time()))
 
 def show():
-    with open('daily.txt','r')as f:
-        for line in f.readlines():
-            if '#' in line :
-                pass
-            else:
-                print line
-
+    daily=open('daily.txt' , 'r')
+    for line in daily:
+        print line
+    daily.close()
 
 def run():
 
-
     print show()
-
     print "*"*20
-
-    print "Usage: hammer.py [Auth] [Options] [Targets]\n"
-    print "Usage: hammer.py [Auth] [Options] [Targets]\n"
+    print "w \n"
+    print "exit \n"
 
 
     Input = str(raw_input('>'))
@@ -32,17 +22,12 @@ def run():
     if Input == "w":
         txt=open('daily.txt' , 'a')
         while True:
-            wir = str(raw_input("www"))
+            wir = str(raw_input('写入'))
             if wir == "exit":
                 sys.exit()
             else:
-                txt.write(Get_Time())
-                txt.write('\n')
                 txt.write(wir)
                 txt.write('\n')
-                txt.write("#")
-                txt.write('\n')
-        txt.close()
 
     elif Input == "exit":
         sys.exit()
