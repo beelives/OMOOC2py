@@ -36,7 +36,7 @@ def run():
     print "*" * 20
 
     Input = str(raw_input(':'))
-    
+
     if Input == "w":
         write()
     elif Input == "e":
