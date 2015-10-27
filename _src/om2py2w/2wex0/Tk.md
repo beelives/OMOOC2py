@@ -51,6 +51,21 @@ root.mainloop() #进入事件循环，
 
 > 搞明白，如何安装、配置、使用，也就是如何去实现，如何去安装，以及如何去使用。
 
+
+
+**【错误记录】**
+**问题**
+get()函数取值出错
+`TypeError: get() takes at least 2 arguments (1 given)`
+**[方法](http://stackoverflow.com/questions/25010018/type-error-get-takes-at-least-2-arguments-1-given)：**
+
+There is no widget called a "TextBox", so I don't know if you're talking about an Entry widget or a Text widget. The get method of the entry widget can be called without parameters, but the get method of the text widget requires two parameters. The two parameters are the starting and ending points of a region.
+
+To get everything in a text widget, you should do it like this:
+
+self.txtBox.get("1.0", "end-1c")
+The "1.0" represents the first character, and "end-1c" represents the last character ("end") minus one character ("-1c") which will ignore the trailing newline that is always added by tkinter itself.
+
 ## WHY
 > 为什么！通过自问的方式问自己什么要这种去实现，为什么要这种去思考。可横纵对比提出问题
 
