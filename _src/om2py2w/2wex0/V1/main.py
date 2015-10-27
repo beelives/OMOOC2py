@@ -44,7 +44,7 @@ def wir():
 """
 
 def run():
-    global  textshow
+    global  text
     global root
     root = Tk()
     root.title('笔记')
