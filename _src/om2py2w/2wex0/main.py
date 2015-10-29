@@ -41,7 +41,7 @@ class PostToolGUI():
         self.cmdPost = cmdPost = Button(root, text='GO', bg='#FFDEAD', width=15, command=lambda: self.cmd_click(self))
         cmdPost.grid(row=3, column=1, sticky=NW)
 
-        self.cmdShow = cmdShow = Button(root, text='(--------------)', bg='#FFDEAD', width=2, command=lambda: self.cmd_show(self))
+        self.cmdShow = cmdShow = Button(root, text='(░)', bg='#FFDEAD', width=2, command=lambda: self.cmd_show(self))
         cmdShow.grid(row=3, column=2,)
 
 

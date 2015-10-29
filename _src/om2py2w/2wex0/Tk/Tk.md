@@ -72,4 +72,4 @@ The "1.0" represents the first character, and "end-1c" represents the last chara
 ----------
 
 ## 体验
-> 记录下整个过程的心得，记录下思考过程和所获得的收获。
+通过对TK模块的使用发现，学习这种模块化的东西需要有手册的引导不要，不要盲目。

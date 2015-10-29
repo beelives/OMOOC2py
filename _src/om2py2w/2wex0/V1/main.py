@@ -46,6 +46,7 @@ def wir():
 def run():
     global  text
     global root
+    # 创建顶层窗口
     root = Tk()
     root.title('笔记')
 
